@@ -6,7 +6,7 @@ class ExpenseController:
         self.view = ExpenseView()
     
     def add_expense(self, name ,amount):
-        self.model.add_expense(self,name,amount)
+        self.model.add_expense(name,amount)
         self.view.show_message("Expense added")
     
     def del_expense(self,id):

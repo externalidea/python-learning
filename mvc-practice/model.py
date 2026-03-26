@@ -15,7 +15,7 @@ class ExpenseModel:
         self.expenses.append(expense)
         self.next_id += 1
 
-    def delete_expense(self, expense_id):
+    def del_expense(self, expense_id):
         self.expenses = [e for e in self.expenses if e.id != expense_id]
 
     def get_expenses(self):
